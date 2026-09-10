@@ -1,0 +1,26 @@
+table {
+  --table-content-width: 45px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+/* tw mean "table width" */
+table .tw-1 {
+  width: var(--table-content-width);
+}
+
+table .tw-2 {
+  width: calc(var(--table-content-width) * 2);
+}
+
+thead tr th {
+  background-color: #222222;
+  border: 1px solid #000000;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+tr td {
+  border: 1px solid #000000;
+  background-color: #f5deb3;
+}
