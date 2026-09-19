@@ -31,10 +31,18 @@ select + select {
   width: 55px;
 }
 
+#mailing-address {
+  width: 350px;
+}
+
 .form-btn {
   border: 1px solid #999;
   color: #fff;
   font-size: 14px;
+}
+
+.form-btn + .form-btn {
+  margin-left: 8px;
 }
 
 .--submit {
