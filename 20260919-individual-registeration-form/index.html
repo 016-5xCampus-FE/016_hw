@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>個人報名表</title>
+    <link rel="stylesheet" href="../general/lib/reset/default-reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="content-container">
+        <form action="" class="">
+          <h1 class="form-name">個人報名 Individual Registration</h1>
+          <fieldset>
+            <legend>基本資料 / Basic Information</legend>
+            <div class="form-field">
+              <label for="client-name"
+                >姓名 / Name<span class="required-hint">*</span></label
+              >
+              <input
+                type="text"
+                id="client-name"
+                name="client-name"
+                placeholder="請輸入姓名"
+                required
+              />
+            </div>
+            <div class="form-field">
+              <label for="gender">性別 / Gender</label>
+              <input type="radio" name="gender" id="gender-male" />
+              <label for="gender-male">男 / Male</label>
+              <input type="radio" name="gender" id="gender-female" />
+              <label for="gender-female">女 / Female</label>
+            </div>
+            <div class="form-field">
+              <label for="nationality">國籍 / Nationality</label>
+              <input
+                type="radio"
+                name="nationality"
+                id="nationality-roc"
+                checked
+              />
+              <label for="nationality-roc">本國國籍 / ROC Citizens</label>
+              <input type="radio" name="nationality" id="nationality-non-roc" />
+              <label for="nationality-non-roc">外國國籍 / Non-Citizens</label>
+            </div>
+            <div class="form-field">
+              <label for="ID-number"
+                >身份證號 / ID Number<span class="required-hint">*</span></label
+              >
+              <input
+                type="text"
+                id="ID-number"
+                name="ID-number"
+                placeholder="身份證號或護照號碼"
+                required
+              />
+            </div>
+            <div class="form-field">
+              <label for="date-of-birth">出生日期 / Date Of Birth</label>
+              <select name="birthday" id="date-of-birth" class="birth-year">
+                <option value="" disabled selected>年 Year</option>
+                <optgroup label="B.C.">
+                  <option value="100">100</option>
+                  <option value="99">99</option>
+                  <option value="98">98</option>
+                  <option value="97">97</option>
+                  <option value="96">96</option>
+                  <option value="95">95</option>
+                </optgroup>
+                <optgroup label="A.D.">
+                  <option value="2024">2024</option>
+                  <option value="2023">2023</option>
+                  <option value="2022">2022</option>
+                  <option value="2021">2021</option>
+                  <option value="2020">2020</option>
+                  <option value="2019">2019</option>
+                </optgroup></select
+              ><select name="birthday" id="birthday-month" class="birth-month">
+                <option value="" disabled selected>月 Month</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option></select
+              ><select name="birthday" id="birthday-day" class="birth-day">
+                <option value="" disabled selected>日 Day</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="client-email"
+                >電子信箱 / Email<span class="required-hint">*</span></label
+              >
+              <input
+                type="email"
+                id="client-email"
+                name="client-email"
+                placeholder="example@mail.com"
+                required
+              />
+            </div>
+            <div class="form-field">
+              <label for="contact-number">連絡電話 / Contact Number</label>
+              <label for="mobile-phone">手機 / Mobile</label>
+              <input
+                type="tel"
+                id="mobile-phone"
+                name="mobile-phone"
+                placeholder="0922053012"
+              />
+              <label for="home">住家 / Home</label>
+              <input
+                type="tel"
+                id="home"
+                name="home"
+                placeholder="0225855659"
+              />
+              <label for="office">公司 / Office</label>
+              <input type="tel" id="office" name="office" placeholder="" />
+            </div>
+            <div class="form-field">
+              <label for="mailing-address">通訊地址 / Mailing Address</label>
+              <select id="mailing-address-city" name="mailing-address-city">
+                <option value="" disabled selected>
+                  請選擇城市別 Country/City
+                </option>
+                <option value="Taipei">台北市 / Taipei</option>
+                <option value="NewTaipei">新北市 / New Taipei</option>
+                <option value="Taichung">台中市 / Taichung</option>
+                <option value="Tainan">台南市 / Tainan</option>
+                <option value="Kaohsiung">高雄市 / Kaohsiung</option>
+              </select>
+              <select
+                id="mailing-address-district"
+                name="mailing-address-district"
+              >
+                <option value="" disabled selected>
+                  請選擇鄉鎮區別 Township
+                </option>
+                <option value="District1">區域1 / District1</option>
+                <option value="District2">區域2 / District2</option>
+                <option value="District3">區域3 / District3</option>
+              </select>
+              <input
+                type="text"
+                id="mailing-address-code"
+                name="mailing-address-code"
+                placeholder="郵遞區號"
+              />
+              <input
+                type="text"
+                id="mailing-address"
+                name="mailing-address"
+                placeholder="例如：昌吉街55號2樓206室"
+              />
+            </div>
+            <div class="form-field">
+              <label for="name-of-emergency-contact"
+                >緊急聯絡人姓名 / Name of Emergency Contact</label
+              >
+              <input
+                type="text"
+                id="name-of-emergency-contact"
+                name="name-of-emergency-contact"
+                placeholder=""
+              />
+              <label for="relationship">關係 / Relationship</label>
+              <input
+                type="text"
+                id="relationship"
+                name="relationship"
+                placeholder=""
+              />
+              <label for="contact-phone">電話 / Phone</label>
+              <input
+                type="tel"
+                id="contact-phone"
+                name="contact-phone"
+                placeholder=""
+              />
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
