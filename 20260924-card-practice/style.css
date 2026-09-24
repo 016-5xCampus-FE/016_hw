@@ -1,0 +1,100 @@
+:root {
+  box-sizing: border-box;
+}
+
+main {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+}
+
+.normal-card {
+  --border-color: #d1d1dc;
+  --btn-primary: #ff133e;
+  --btn-secondary: white;
+
+  width: 340px;
+  margin: 0 auto;
+
+  border: 1px solid var(--border-color);
+}
+
+.normal-card_img {
+  overflow: hidden;
+}
+
+.normal-card_img img {
+  width: 100%;
+}
+
+.normal-card_content {
+  padding: 32px 24px;
+}
+
+.card-info {
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.card-info .price {
+  font-size: 30px;
+  margin-bottom: 16px;
+}
+
+.event-btn {
+  font-size: 18px;
+  display: block;
+  width: 100%;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.event-btn + .event-btn {
+  margin-top: 8px;
+}
+
+.event-btn.add-cart {
+  background-color: var(--btn-primary);
+  color: var(--btn-secondary);
+  border: 1px solid var(--btn-primary);
+}
+
+.event-btn.buy-now {
+  background-color: var(--btn-secondary);
+  color: var(--btn-primary);
+  border: 1px solid var(--btn-primary);
+}
+
+.card-detail {
+  padding-top: 24px;
+}
+
+.card-detail p {
+  margin-bottom: 16px;
+}
+
+.card-detail li {
+  list-style-type: circle;
+  margin-left: 1em;
+}
+
+.card-detail li + li {
+  margin-top: 12px;
+}
+
+.normal-card_foot {
+  border-top: 1px solid var(--border-color);
+  padding: 16px;
+}
+
+.normal-card_more-link {
+  text-decoration: underline;
+}
+
+.normal-card_more-link:hover {
+  color: var(--btn-primary);
+}
+
+.normal-card_foot span + a {
+  margin-inline-start: -0.25em;
+}
